@@ -9,6 +9,7 @@ import Logo from 'components/icons/MainLogo'
 import NotificationIcon from 'components/icons/Notification'
 import MessageIcon from 'components/icons/Message'
 import DownIcon from 'components/icons/Down'
+import CircleImage from 'components/CircleImage'
 export default function Header({ children }) {
   return (
     <header className={styles.header}>
@@ -17,7 +18,7 @@ export default function Header({ children }) {
           <Logo width={24} height={24} color={'rgb(var(--c-p))'} />
         </IconButton>
         <MainButton>Ana Sayfa</MainButton>
-        <MainButton>Takip Edilen</MainButton>
+        <MainButton>Takip Ediliyor</MainButton>
       </div>
       <SearchBar />
       <div className={styles.profileButtonsContainer}>
@@ -29,10 +30,10 @@ export default function Header({ children }) {
         </IconButton>
 
         <IconButton>
-          <DownIcon width={24} height={24} />
+          <CircleImage src='/image/profile.jpg' />
         </IconButton>
 
-        <IconButton>
+        <IconButton className={styles.miniButton}>
           <DownIcon width={12} height={12} />
         </IconButton>
       </div>

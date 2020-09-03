@@ -5,9 +5,8 @@
   grid-template-columns: auto 1fr auto;
   grid-gap: 10px;
   align-items: center;
-  padding-left: 22px;
-  padding-right: 27px;
-  border-bottom: 1px solid black;
+  padding-left: 15px;
+  padding-right: 15px;
 
   .navigationContainer,
   .profileButtonsContainer {
@@ -17,7 +16,11 @@
 
   .profileButtonsContainer {
     button {
-      color: rgb(var(--c-g-118));
+      color: rgb(var(--c-118));
+    }
+    .miniButton {
+      width: 24px;
+      height: 24px;
     }
   }
 }

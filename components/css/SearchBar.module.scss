@@ -1,13 +1,14 @@
 .searchBar {
-  background-color: #efefef;
+  background-color: rgb(var(--c-239));
   height: 48px;
   width: 100%;
   border-radius: 99px;
   padding-left: 16px;
   padding-right: 16px;
-  color: rgb(var(--c-g-118));
+  color: rgb(var(--c-118));
   display: flex;
   align-items: center;
+
   input[type='text'] {
     margin-left: 8px;
     height: 100%;
@@ -17,7 +18,7 @@
     background-color: transparent;
     color: rgb(var(--c-b));
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: lighter;
   }
 
   svg {

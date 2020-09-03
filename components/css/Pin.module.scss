@@ -1,0 +1,14 @@
+.pin {
+  cursor: zoom-in;
+  min-height: 120px;
+  border-radius: 18px;
+  max-height: 420px;
+  img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 18px;
+    position: absolute;
+  }
+}
