@@ -1,0 +1,23 @@
+.header {
+  height: 80px;
+  background: rgb(var(--c-primary));
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-gap: 10px;
+  align-items: center;
+  padding-left: 22px;
+  padding-right: 27px;
+  border-bottom: 1px solid black;
+
+  .navigationContainer,
+  .profileButtonsContainer {
+    display: flex;
+    align-items: center;
+  }
+
+  .profileButtonsContainer {
+    button {
+      color: rgb(var(--c-g-118));
+    }
+  }
+}
