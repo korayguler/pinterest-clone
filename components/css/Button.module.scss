@@ -9,16 +9,4 @@
   height: 100%;
   cursor: pointer;
   transition: var(--effect-fade);
-  &:hover {
-    background-color: rgb(var(--c-m));
-  }
-}
-
-.selected {
-  color: rgb(var(--c-primary));
-  background-color: rgb(var(--c-secondary));
-}
-
-.opened {
-  color: rgb(var(--c-secondary));
 }

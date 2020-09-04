@@ -8,4 +8,19 @@
   font-size: 1rem;
   color: rgb(var(--c-secondary));
   -webkit-font-smoothing: antialiased;
+  &:hover {
+    background-color: rgb(var(--c-m));
+  }
+  &:focus {
+    box-shadow: 0 0 0 4px rgba(var(--c-outline), 0.5);
+  }
+}
+
+.selected {
+  background: rgb(var(--c-secondary));
+  color: rgb(var(--c-primary));
+  &:hover {
+    background: rgb(var(--c-secondary));
+    color: rgb(var(--c-primary));
+  }
 }

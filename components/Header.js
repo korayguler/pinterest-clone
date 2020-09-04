@@ -17,7 +17,7 @@ export default function Header({ children }) {
         <IconButton>
           <Logo width={24} height={24} color={'rgb(var(--c-p))'} />
         </IconButton>
-        <MainButton>Ana Sayfa</MainButton>
+        <MainButton selected={true}>Ana Sayfa</MainButton>
         <MainButton>Takip Ediliyor</MainButton>
       </div>
       <SearchBar />
