@@ -4,29 +4,37 @@ import SearchBar from 'components/SearchBar'
 import ClassNames from 'classnames'
 import Button from 'components/Button'
 import MainButton from 'components/MainButton'
-import IconButton from 'components/IconButton'
-import Logo from 'components/icons/MainLogo'
-import NotificationIcon from 'components/icons/Notification'
-import MessageIcon from 'components/icons/Message'
-import DownIcon from 'components/icons/Down'
 import CircleImage from 'components/CircleImage'
+import * as Icon from 'components/icons'
+import IconButton from 'components/IconButton'
+import { useRouter } from 'next/router'
+
 export default function Header({ children }) {
+  const router = useRouter()
+
   return (
     <header className={styles.header}>
       <div className={styles.navigationContainer}>
-        <IconButton>
-          <Logo width={24} height={24} color={'rgb(var(--c-p))'} />
+        <IconButton href={'/'}>
+          <Icon.MainLogo width={24} height={24} color={'rgb(var(--c-p))'} />
         </IconButton>
-        <MainButton selected={true}>Ana Sayfa</MainButton>
-        <MainButton>Takip Ediliyor</MainButton>
+        <MainButton href={'/'} selected={router.pathname == '/' ? true : false}>
+          Ana Sayfa
+        </MainButton>
+        <MainButton
+          href={'/following'}
+          selected={router.pathname == '/following' ? true : false}
+        >
+          Takip Ediliyor
+        </MainButton>
       </div>
       <SearchBar />
       <div className={styles.profileButtonsContainer}>
         <IconButton>
-          <NotificationIcon width={24} height={24} />
+          <Icon.Notification width={24} height={24} />
         </IconButton>
         <IconButton>
-          <MessageIcon width={24} height={24} />
+          <Icon.Message width={24} height={24} />
         </IconButton>
 
         <IconButton>
@@ -34,7 +42,7 @@ export default function Header({ children }) {
         </IconButton>
 
         <IconButton className={styles.miniButton}>
-          <DownIcon width={12} height={12} />
+          <Icon.Down width={12} height={12} />
         </IconButton>
       </div>
     </header>

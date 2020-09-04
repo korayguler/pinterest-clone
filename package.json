@@ -16,7 +16,8 @@
   },
   "scripts": {
     "dev": "next",
-    "svgr": "svgr icons/* --icon --out-dir components/icons "
+    "svgr": "svgr icons/* --icon --out-dir components/icons ",
+    "build": "next build"
   },
   "author": "",
   "license": "ISC"

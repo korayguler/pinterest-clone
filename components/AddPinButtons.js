@@ -6,18 +6,10 @@ import styles from 'components/css/AddPinButtons.module.scss'
 export default function FixedButton() {
   return (
     <div className={styles.addPinButtons}>
-      <IconButton
-        focused={false}
-        hoverable={false}
-        className={styles.pinButtons}
-      >
+      <IconButton focused hoverable className={styles.pinButtons}>
         <PlusIcon />
       </IconButton>
-      <IconButton
-        focused={false}
-        hoverable={false}
-        className={styles.pinButtons}
-      >
+      <IconButton focused hoverable={false} className={styles.pinButtons}>
         <InfoIcon />
       </IconButton>
     </div>

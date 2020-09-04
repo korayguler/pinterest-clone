@@ -1,11 +1,31 @@
 import React from 'react'
 import styles from 'components/css/Button.module.scss'
 import classMerge from 'classnames'
+import Link from 'next/link'
 
-export default function Button({ children, className, ...props }) {
+function BaseButton({ children, ...props }) {
   return (
-    <button className={classMerge(styles.btn, className)} {...props}>
+    <button type='button' {...props}>
       {children}
     </button>
   )
 }
+
+function LinkButton({ children, href, ...props }) {
+  return (
+    <Link href={href}>
+      <a {...props}>{children}</a>
+    </Link>
+  )
+}
+
+function Button({ children, className, ...props }) {
+  const Comp = props.href ? LinkButton : BaseButton
+  return (
+    <Comp className={classMerge(styles.btn, className)} {...props}>
+      {children}
+    </Comp>
+  )
+}
+
+export default Button

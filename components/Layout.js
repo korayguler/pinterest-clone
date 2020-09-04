@@ -1,12 +1,13 @@
 import React from 'react'
 import Header from 'components/Header'
+import Content from 'components/Content'
 import styles from 'components/css/Layout.module.scss'
 import AddPinButtons from 'components/AddPinButtons'
 export default function Layout({ children }) {
   return (
     <div>
       <Header />
-      <main className={styles.main}>{children}</main>
+      <Content>{children}</Content>
       <AddPinButtons />
       <footer>footer</footer>
     </div>

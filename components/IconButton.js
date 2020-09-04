@@ -7,6 +7,7 @@ export default function IconButton({
   className,
   focused = true,
   hoverable = true,
+  ...props
 }) {
   return (
     <Button
@@ -16,6 +17,7 @@ export default function IconButton({
         focused && styles.focused,
         hoverable && styles.hoverable
       )}
+      {...props}
     >
       {children}
     </Button>
