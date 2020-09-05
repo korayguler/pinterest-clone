@@ -1,21 +1,6 @@
 ## Pinterest React (Next.js) Clone
 
-## Tech Stack
-
-- ReactJs
-- NextJs
-- Scss
-
-## Other plugins
-
-- react-stack-grid
-
-## Prerequisite
-
-- node
-- npm
-
-## How to run localside
+### How to run localside
 
 ```bash
 # Clone this repository
@@ -32,3 +17,21 @@ $ npm install
 $ npm run dev
 
 ```
+
+### Tech Stack
+
+- react
+- react-dom
+- next
+
+### Other plugins
+
+- react-stack-grid
+- sass
+- svgr
+- classnames
+
+### Prerequisite
+
+- node
+- npm
