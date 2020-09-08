@@ -3,10 +3,10 @@
   min-height: 120px;
   border-radius: 18px;
   max-height: 420px;
-  display: block;
+  height: 100%;
+  position: relative;
   img {
     max-width: 100%;
-    height: auto;
     width: 100%;
     object-fit: contain;
     border-radius: 18px;

@@ -35,3 +35,8 @@ $ npm run dev
 
 - node
 - npm
+
+### TODO
+
+- [ ] Pinler iç içe geçiyor :bug
+- [ ] DiscoverPin componenti tamamlanıp data çekilecek

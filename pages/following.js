@@ -1,7 +1,10 @@
-import React from 'react'
 import Layout from 'components/Layout'
-
-const FollowingPage = () => {
-  return <Layout>following</Layout>
+import DiscoverPin from 'components/DiscoverPin'
+function FollowingPage() {
+  return (
+    <Layout>
+      <DiscoverPin />
+    </Layout>
+  )
 }
 export default FollowingPage
