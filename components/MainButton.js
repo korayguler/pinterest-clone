@@ -6,11 +6,16 @@ export default function MainButton({
   children,
   selected = false,
   href,
+  className,
   ...props
 }) {
   return (
     <Button
-      className={classMerge(styles.mainButton, selected && styles.selected)}
+      className={classMerge(
+        styles.mainButton,
+        selected && styles.selected,
+        className
+      )}
       href={href}
       {...props}
     >

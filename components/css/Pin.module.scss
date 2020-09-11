@@ -1,7 +1,7 @@
 .pin {
   cursor: zoom-in;
   min-height: 120px;
-  border-radius: 18px;
+  border-radius: 16px;
   max-height: 420px;
   height: 100%;
   position: relative;
@@ -9,7 +9,69 @@
     max-width: 100%;
     width: 100%;
     object-fit: contain;
-    border-radius: 18px;
+    border-radius: 16px;
+  }
+  .content {
     position: absolute;
+    height: 100%;
+    top: 0;
+    width: 100%;
+
+    .saveButton {
+      position: absolute;
+      background: rgb(var(--c-p));
+      right: 0;
+      width: 65px;
+      height: 38px;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 500;
+      color: rgb(var(--c-primary));
+      margin: 10px;
+      &:hover {
+        background: rgb(var(--c-p-d));
+      }
+    }
+    .helpers {
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      display: flex;
+      padding: 10px;
+      justify-content: space-evenly;
+      .urlButton {
+        height: 30px;
+        min-width: 130px;
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 700;
+        max-width: 130px;
+        overflow: hidden;
+        margin-right: 10px;
+        padding-left: 25px;
+        padding-right: 5px;
+        .newTabIcon {
+          position: absolute;
+          left: 20px;
+          font-size: 9px;
+        }
+      }
+
+      .iconButtonsArea {
+        display: flex;
+        .iconButtons {
+          width: 32px;
+          height: 32px;
+          background-color: rgba(var(--c-primary), 0.8);
+          & + .iconButtons {
+            margin-left: 10px;
+          }
+          &:hover {
+            background-color: rgba(var(--c-primary));
+          }
+        }
+      }
+    }
   }
 }

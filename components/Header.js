@@ -25,7 +25,7 @@ export default function Header({ children }) {
           href={'/following'}
           selected={router.pathname == '/following' ? true : false}
         >
-          Takip Ediliyor
+          Takip ediliyor
         </MainButton>
       </div>
       <SearchBar />
@@ -38,7 +38,7 @@ export default function Header({ children }) {
         </IconButton>
 
         <IconButton>
-          <CircleImage src='/image/profile.jpg' />
+          <CircleImage src='/image/profile.jpg' size={'28px'} />
         </IconButton>
 
         <IconButton className={styles.miniButton}>

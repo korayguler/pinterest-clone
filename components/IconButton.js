@@ -13,9 +13,9 @@ export default function IconButton({
     <Button
       className={classMerge(
         styles.iconButton,
-        className,
         focused && styles.focused,
-        hoverable && styles.hoverable
+        hoverable && styles.hoverable,
+        className
       )}
       {...props}
     >

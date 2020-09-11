@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from 'components/css/Button.module.scss'
 import classMerge from 'classnames'
 import Link from 'next/link'

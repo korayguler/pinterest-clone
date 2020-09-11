@@ -17,6 +17,6 @@
   transition-duration: 0.85s;
   transition-timing-function: cubic-bezier(0.19, 1.32, 0.48, 1);
   &:hover {
-    background-color: rgba(var(--c-secondary), 0.05);
+    background-color: rgba(var(--c-primary), 0.7);
   }
 }

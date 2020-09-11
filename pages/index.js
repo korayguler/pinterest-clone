@@ -1,27 +1,11 @@
 import Layout from 'components/Layout'
 import Pin from 'components/Pin'
-import StackGrid, { transitions, easings } from 'react-stack-grid'
 import DummyData from 'dummy'
-
-const transition = transitions.scaleDown
+import Template from 'components/Template'
 export default function Homepage() {
   return (
     <Layout>
-      <StackGrid
-        duration={400}
-        monitorImagesLoaded
-        columnWidth={235}
-        gutterWidth={15}
-        gutterHeight={40}
-        itemComponent={'div'}
-        easing={easings.cubicOut}
-        appearDelay={60}
-        appear={transition.appear}
-        appeared={transition.appeared}
-        enter={transition.enter}
-        entered={transition.entered}
-        leaved={transition.leaved}
-      >
+      <Template>
         {DummyData.map((e, i) => (
           <Pin
             key={i}
@@ -32,7 +16,7 @@ export default function Homepage() {
             href='http://korayguler.com/'
           />
         ))}
-      </StackGrid>
+      </Template>
     </Layout>
   )
 }

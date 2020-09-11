@@ -9,7 +9,7 @@ export default function FixedButton() {
       <IconButton focused hoverable className={styles.pinButtons}>
         <PlusIcon />
       </IconButton>
-      <IconButton focused hoverable={false} className={styles.pinButtons}>
+      <IconButton focused hoverable className={styles.pinButtons}>
         <InfoIcon />
       </IconButton>
     </div>
