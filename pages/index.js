@@ -2,7 +2,7 @@ import Layout from 'components/Layout'
 import Pin from 'components/Pin'
 import DummyData from 'dummy'
 import Template from 'components/Template'
-export default function Homepage() {
+const HomePage = ()=>{
   return (
     <Layout>
       <Template>
@@ -20,3 +20,4 @@ export default function Homepage() {
     </Layout>
   )
 }
+export default HomePage

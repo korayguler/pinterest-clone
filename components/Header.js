@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from 'components/css/Header.module.scss'
 import SearchBar from 'components/SearchBar'
 import ClassNames from 'classnames'
@@ -37,8 +36,8 @@ export default function Header({ children }) {
           <Icon.Message width={24} height={24} />
         </IconButton>
 
-        <IconButton>
-          <CircleImage src='/image/profile.jpg' size={'28px'} />
+        <IconButton href={'/profile'}>
+          <CircleImage src='/image/profile.jpg' size={'24px'} />
         </IconButton>
 
         <IconButton className={styles.miniButton}>

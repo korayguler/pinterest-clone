@@ -1,4 +1,3 @@
-import React from 'react'
 import Header from 'components/Header'
 import Content from 'components/Content'
 import styles from 'components/css/Layout.module.scss'

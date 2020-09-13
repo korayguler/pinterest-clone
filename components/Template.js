@@ -8,7 +8,7 @@ export default function Template({
 }) {
   return (
     <StackGrid
-      duration={400}
+      duration={600}
       monitorImagesLoaded
       columnWidth={columnWidth}
       gutterWidth={gutterWidth}

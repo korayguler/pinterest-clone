@@ -6,6 +6,7 @@
   margin: 12px;
 }
 .pinButtons {
+  position: relative;
   margin: 8px;
   width: 40px;
   height: 40px;
@@ -18,5 +19,44 @@
   transition-timing-function: cubic-bezier(0.19, 1.32, 0.48, 1);
   &:hover {
     background-color: rgba(var(--c-primary), 0.7);
+  }
+}
+.showAddPinModal {
+  position: absolute;
+  right: 48px;
+  width: 284px;
+
+  .addPinMessageTextArea {
+    display: flex;
+    align-items: center;
+
+    .getApp {
+      font-weight: 700;
+      font-size: 14px;
+      width: 100%;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 16px;
+      border-top-left-radius: 16px;
+      padding: 20px;
+      & > svg {
+        font-size: 18px;
+        margin-right: 6px;
+      }
+    }
+    border-bottom: 1px solid rgba(var(--c-secondary), 0.2);
+  }
+
+  .addButton {
+    width: 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    padding: 20px;
+    & > span {
+      font-size: 14px;
+      margin-left: 6px;
+    }
   }
 }

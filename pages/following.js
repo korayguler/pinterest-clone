@@ -4,7 +4,7 @@ import StackGrid, { transitions, easings } from 'react-stack-grid'
 import Template from 'components/Template'
 import DummyData from 'dummy'
 import dummyData from 'dummy'
-function FollowingPage() {
+const FollowingPage = () => {
   return (
     <Layout>
       <Template gutterHeight={24}>

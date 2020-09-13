@@ -38,24 +38,6 @@ $ npm run dev
 
 ### TODO
 
-- [ ] Pinler iç içe geçiyor :bug
-- [ ] DiscoverPin componenti tamamlanıp data çekilecek
-
-  <StackGrid
-  vendorPrefix={true}
-  columnWidth={235}
-  gutterWidth={15}
-  gutterHeight={40}
-  duration={1000}
-  itemComponent={'div'}
-  gridRef={(grid) => (this.grid = grid)} >
-  {DummyData.map((e) => (
-  <Pin
-              className='pin'
-              title='Test Pin'
-              desc='Test pin for my pinterest clone'
-              image={e.image}
-              href='http://korayguler.com/'
-            />
-  ))}
-  </StackGrid>
+- [X] Pinler iç içe geçiyor :bug
+- [X] PinExtra componenti tamamlanıp data çekilecek
+- [ ]

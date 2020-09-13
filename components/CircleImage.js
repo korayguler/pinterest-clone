@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from 'components/css/CircleImage.module.scss'
 export default function CircleImage({ src, size }) {
   return (

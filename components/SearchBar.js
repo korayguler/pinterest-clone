@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from 'components/css/SearchBar.module.scss'
 import SearchIcon from 'components/icons/Search'
 export default function SearchBar({ children }) {

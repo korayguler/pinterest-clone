@@ -1,0 +1,16 @@
+.newPinArea {
+  max-width: 880px;
+  background: teal;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+  display: flex;
+  .leftSide {
+    flex: 1;
+    background: red;
+  }
+  .rightSide {
+    background: blue;
+    flex: 1;
+  }
+}
