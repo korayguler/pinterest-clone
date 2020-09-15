@@ -7,36 +7,54 @@ import ModalArea from 'components/ModalArea'
 import MainLogo from 'components/icons/MainLogo'
 import MainButton from 'components/MainButton'
 export default function FixedButton() {
-  const [showAddPinModal, showAddPinModalSet] = useState(true)
-  useEffect(() => {
-    showAddPinModalSet(!showAddPinModal)
-  }, [])
+  const [showAddPinModal, showAddPinModalSet] = useState(false)
+  const [showGetAppModal, showGetAppModalSet] = useState(false)
+
+  useEffect(() => {}, [])
   return (
-    <div className={styles.addPinButtons}>
-      <IconButton
-        focused
-        hoverable
-        className={styles.pinButtons}
-        onClick={() => showAddPinModalSet(!showAddPinModal)}
-      >
-        <PlusIcon />
-        {showAddPinModal && (
-          <ModalArea className={styles.showAddPinModal}>
-            <span className={styles.addPinMessageTextArea}>
-              <MainButton className={styles.getApp}>
-                <MainLogo />
-                <span> Get pinterest app</span>
+    <>
+      {showGetAppModal && (
+        <div className={styles.getAppModalContainer}>
+          <div className={styles.getAppModal}>w</div>
+          <div
+            className={styles.getAppModalArea}
+            onClick={() => showGetAppModalSet(!showGetAppModal)}
+          >
+            {' '}
+          </div>
+        </div>
+      )}
+
+      <div className={styles.addPinButtons}>
+        <IconButton
+          focused
+          hoverable
+          className={styles.pinButtons}
+          onClick={() => showAddPinModalSet(!showAddPinModal)}
+        >
+          <PlusIcon />
+          {showAddPinModal && (
+            <ModalArea className={styles.showAddPinModal}>
+              <span className={styles.addPinMessageTextArea}>
+                <MainButton
+                  onClick={() => showGetAppModalSet(!showGetAppModal)}
+                  className={styles.getApp}
+                >
+                  <MainLogo className={styles.getAppMainLogo} />
+                  <span>Get pinterest app</span>
+                </MainButton>
+              </span>
+              <MainButton href='/new-pin' className={styles.addButton}>
+                <PlusIcon />
+                <span className={styles.createNewPinText}>Create new pin</span>
               </MainButton>
-            </span>
-            <MainButton href='/new-pin' className={styles.addButton}>
-              <PlusIcon /> <span>Create new pin</span>
-            </MainButton>
-          </ModalArea>
-        )}
-      </IconButton>
-      <IconButton focused hoverable className={styles.pinButtons}>
-        <InfoIcon />
-      </IconButton>
-    </div>
+            </ModalArea>
+          )}
+        </IconButton>
+        <IconButton focused hoverable className={styles.pinButtons}>
+          <InfoIcon />
+        </IconButton>
+      </div>
+    </>
   )
 }

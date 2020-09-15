@@ -1,13 +1,90 @@
+.container {
+  background-color: rgb(var(--c-239));
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 120%;
+  z-index: -44;
+  position: absolute;
+}
+
 .newPinArea {
   max-width: 880px;
-  background: teal;
+  background-color: rgb(var(--c-primary));
   margin-left: auto;
   margin-right: auto;
-  padding: 40px;
+  padding: 40px 60px;
   display: flex;
+  margin-top: 124px;
+  border-radius: 16px;
   .leftSide {
     flex: 1;
-    background: red;
+    .imageUploadArea {
+      width: 340px;
+      height: 450px;
+      background-color: rgb(var(--c-239));
+      padding: 14px;
+      border-radius: 8px;
+      .mediaEmptyView {
+        border: 2px dashed rgb(var(--c-m));
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+        position: relative;
+        .mediaEmtyViewInside {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          justify-content: flex-end;
+          span {
+            margin-top: 28px;
+            margin-bottom: 110px;
+            svg {
+              font-size: 32px;
+              color: rgb(var(--c-118));
+            }
+            p {
+              font-weight: 400;
+              font-size: 16px;
+              color: rgb(var(--c-111));
+              padding-left: 48px;
+              padding-right: 48px;
+            }
+          }
+          p {
+            margin-bottom: 22px;
+            font-size: 14px;
+            color: rgb(var(--c-111));
+            font-weight: 400;
+          }
+        }
+        input {
+          cursor: pointer;
+          height: 100%;
+          opacity: 0;
+          position: absolute;
+          width: 100%;
+          left: 0px;
+          top: 0px;
+          font-size: 0px;
+        }
+      }
+    }
+    .saveButton {
+      margin-top: 11px;
+      min-width: 340px;
+      justify-content: center;
+      background-color: rgb(var(--c-239));
+      color: rgb(var(--c-secondary));
+
+      &:hover {
+        background-color: #e2e2e2;
+      }
+    }
   }
   .rightSide {
     background: blue;
