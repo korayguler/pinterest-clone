@@ -24,7 +24,7 @@ $ npm run dev
 - react-dom
 - next
 
-### Other plugins
+### Other Modules
 
 - react-stack-grid
 - sass
@@ -40,4 +40,3 @@ $ npm run dev
 
 - [X] Pinler iç içe geçiyor :bug
 - [X] PinExtra componenti tamamlanıp data çekilecek
-- [ ]
