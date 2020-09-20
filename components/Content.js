@@ -1,5 +1,5 @@
-import styles from 'components/css/Content.module.scss'
+import styles from 'components/css/Content.module.scss';
 function Content({ children }) {
-  return <main className={styles.main}>{children}</main>
+  return <main className={styles.main}>{children}</main>;
 }
-export default Content
+export default Content;

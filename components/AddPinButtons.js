@@ -1,16 +1,16 @@
-import { useState, useEffect } from 'react'
-import IconButton from 'components/IconButton'
-import PlusIcon from 'components/icons/Plus'
-import InfoIcon from 'components/icons/Info'
-import styles from 'components/css/AddPinButtons.module.scss'
-import ModalArea from 'components/ModalArea'
-import MainLogo from 'components/icons/MainLogo'
-import MainButton from 'components/MainButton'
+import { useState, useEffect } from 'react';
+import IconButton from 'components/IconButton';
+import PlusIcon from 'components/icons/Plus';
+import InfoIcon from 'components/icons/Info';
+import styles from 'components/css/AddPinButtons.module.scss';
+import ModalArea from 'components/ModalArea';
+import MainLogo from 'components/icons/MainLogo';
+import MainButton from 'components/MainButton';
 export default function FixedButton() {
-  const [showAddPinModal, showAddPinModalSet] = useState(false)
-  const [showGetAppModal, showGetAppModalSet] = useState(false)
+  const [showAddPinModal, showAddPinModalSet] = useState(false);
+  const [showGetAppModal, showGetAppModalSet] = useState(false);
 
-  useEffect(() => {}, [])
+  useEffect(() => {}, []);
   return (
     <>
       {showGetAppModal && (
@@ -33,6 +33,8 @@ export default function FixedButton() {
           onClick={() => showAddPinModalSet(!showAddPinModal)}
         >
           <PlusIcon />
+
+          {/* MODAL AREA*/}
           {showAddPinModal && (
             <ModalArea className={styles.showAddPinModal}>
               <span className={styles.addPinMessageTextArea}>
@@ -51,10 +53,7 @@ export default function FixedButton() {
             </ModalArea>
           )}
         </IconButton>
-        <IconButton focused hoverable className={styles.pinButtons}>
-          <InfoIcon />
-        </IconButton>
       </div>
     </>
-  )
+  );
 }

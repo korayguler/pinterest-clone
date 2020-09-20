@@ -1,6 +1,6 @@
-import Button from 'components/Button'
-import styles from 'components/css/IconButton.module.scss'
-import classMerge from 'classnames'
+import Button from 'components/Button';
+import styles from 'components/css/IconButton.module.scss';
+import classMerge from 'classnames';
 export default function IconButton({
   children,
   className,
@@ -14,11 +14,11 @@ export default function IconButton({
         styles.iconButton,
         focused && styles.focused,
         hoverable && styles.hoverable,
-        className
+        className,
       )}
       {...props}
     >
       {children}
     </Button>
-  )
+  );
 }

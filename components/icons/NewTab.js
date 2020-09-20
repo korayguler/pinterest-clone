@@ -1,4 +1,4 @@
-import * as React from 'react'
+import * as React from 'react';
 
 function SvgNewTab(props) {
   return (
@@ -15,7 +15,7 @@ function SvgNewTab(props) {
         d='M4.928 1a2.357 2.357 0 100 4.714h10.024L1.69 18.976a2.36 2.36 0 000 3.334 2.35 2.35 0 001.668.69c.603 0 1.206-.229 1.667-.69L18.285 9.047v10.024a2.358 2.358 0 104.715 0V1H4.928z'
       />
     </svg>
-  )
+  );
 }
 
-export default SvgNewTab
+export default SvgNewTab;

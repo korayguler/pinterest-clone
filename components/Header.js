@@ -1,15 +1,15 @@
-import styles from 'components/css/Header.module.scss'
-import SearchBar from 'components/SearchBar'
-import ClassNames from 'classnames'
-import Button from 'components/Button'
-import MainButton from 'components/MainButton'
-import CircleImage from 'components/CircleImage'
-import * as Icon from 'components/icons'
-import IconButton from 'components/IconButton'
-import { useRouter } from 'next/router'
+import styles from 'components/css/Header.module.scss';
+import SearchBar from 'components/SearchBar';
+import ClassNames from 'classnames';
+import Button from 'components/Button';
+import MainButton from 'components/MainButton';
+import CircleImage from 'components/CircleImage';
+import * as Icon from 'components/icons';
+import IconButton from 'components/IconButton';
+import { useRouter } from 'next/router';
 
 export default function Header({ children }) {
-  const router = useRouter()
+  const router = useRouter();
 
   return (
     <header className={styles.header}>
@@ -45,5 +45,5 @@ export default function Header({ children }) {
         </IconButton>
       </div>
     </header>
-  )
+  );
 }

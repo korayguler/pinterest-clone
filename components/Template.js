@@ -1,5 +1,5 @@
-import StackGrid, { transitions, easings } from 'react-stack-grid'
-const transition = transitions.scaleDown
+import StackGrid, { transitions, easings } from 'react-stack-grid';
+const transition = transitions.scaleDown;
 export default function Template({
   children,
   gutterHeight = 40,
@@ -24,5 +24,5 @@ export default function Template({
     >
       {children}
     </StackGrid>
-  )
+  );
 }

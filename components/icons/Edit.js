@@ -1,4 +1,4 @@
-import * as React from 'react'
+import * as React from 'react';
 
 function SvgEdit(props) {
   return (
@@ -15,7 +15,7 @@ function SvgEdit(props) {
         d='M13.386 6.018l4.596 4.596L7.097 21.499 1 22.999l1.501-6.096L13.386 6.018zm8.662-4.066a3.248 3.248 0 010 4.596l-2.298 2.3-4.596-4.598 2.298-2.299a3.248 3.248 0 014.596 0z'
       />
     </svg>
-  )
+  );
 }
 
-export default SvgEdit
+export default SvgEdit;

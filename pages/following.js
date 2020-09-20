@@ -1,9 +1,9 @@
-import Layout from 'components/Layout'
-import PinExtra from 'components/PinExtra'
-import StackGrid, { transitions, easings } from 'react-stack-grid'
-import Template from 'components/Template'
-import DummyData from 'dummy'
-import dummyData from 'dummy'
+import Layout from 'components/Layout';
+import PinExtra from 'components/PinExtra';
+import StackGrid, { transitions, easings } from 'react-stack-grid';
+import Template from 'components/Template';
+import DummyData from 'dummy';
+import dummyData from 'dummy';
 const FollowingPage = () => {
   return (
     <Layout>
@@ -21,6 +21,6 @@ const FollowingPage = () => {
         ))}
       </Template>
     </Layout>
-  )
-}
-export default FollowingPage
+  );
+};
+export default FollowingPage;

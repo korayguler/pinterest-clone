@@ -170,5 +170,5 @@ const dummyData = [
     title: 'Blender study, Waldemar van…',
     href: 'http://korayguler.com/',
   },
-]
-export default dummyData
+];
+export default dummyData;

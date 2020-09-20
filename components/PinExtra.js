@@ -1,6 +1,6 @@
-import Pin from 'components/Pin'
-import styles from 'components/css/PinExtra.module.scss'
-import CircleImage from 'components/CircleImage'
+import Pin from 'components/Pin';
+import styles from 'components/css/PinExtra.module.scss';
+import CircleImage from 'components/CircleImage';
 export default function PinExtra({
   title,
   href,
@@ -20,5 +20,5 @@ export default function PinExtra({
         </div>
       </div>
     </div>
-  )
+  );
 }

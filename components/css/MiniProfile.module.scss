@@ -1,0 +1,19 @@
+.profile {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  img {
+    margin-right: 5px;
+  }
+}
+.text {
+  text-aling: center;
+  font-size: 14px;
+  font-weight: 400;
+
+  color: #111;
+}
+.boldText {
+  font-weight: 700;
+}

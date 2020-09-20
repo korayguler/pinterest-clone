@@ -1,8 +1,8 @@
-import Layout from 'components/Layout'
-import Pin from 'components/Pin'
-import DummyData from 'dummy'
-import Template from 'components/Template'
-const HomePage = ()=>{
+import Layout from 'components/Layout';
+import Pin from 'components/Pin';
+import DummyData from 'dummy';
+import Template from 'components/Template';
+const HomePage = () => {
   return (
     <Layout>
       <Template>
@@ -18,6 +18,6 @@ const HomePage = ()=>{
         ))}
       </Template>
     </Layout>
-  )
-}
-export default HomePage
+  );
+};
+export default HomePage;

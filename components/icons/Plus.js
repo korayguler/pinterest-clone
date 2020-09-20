@@ -1,4 +1,4 @@
-import * as React from 'react'
+import * as React from 'react';
 
 function SvgPlusIcon(props) {
   return (
@@ -15,7 +15,7 @@ function SvgPlusIcon(props) {
         d='M22 10h-8V2a2 2 0 00-4 0v8H2a2 2 0 000 4h8v8a2 2 0 004 0v-8h8a2 2 0 000-4'
       />
     </svg>
-  )
+  );
 }
 
-export default SvgPlusIcon
+export default SvgPlusIcon;
