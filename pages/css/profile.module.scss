@@ -1,5 +1,25 @@
-.profileArea{
-    padding-top:10px;
-    display:flex;
-    justify-content:center;
+.profileArea {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.fullName {
+  font-size: 36px;
+  color: #111;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.userName {
+  font-size: 16px;
+  color: #111;
+  font-weight: 300;
+}
+.followArea {
+  margin-top: 10px;
+  span:last-child {
+    font-weight: 700;
+  }
 }

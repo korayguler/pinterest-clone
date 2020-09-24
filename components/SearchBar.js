@@ -4,7 +4,7 @@ export default function SearchBar({ children }) {
   return (
     <div className={styles.searchBar}>
       <SearchIcon width='16' height='16' />
-      <input type='text' placeholder='Ara' />
+      <input type='text' placeholder='Search' />
     </div>
   );
 }

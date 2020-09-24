@@ -43,7 +43,7 @@ export default function FixedButton() {
                   className={styles.getApp}
                 >
                   <MainLogo className={styles.getAppMainLogo} />
-                  <span>Get pinterest app</span>
+                  <span>About the App</span>
                 </MainButton>
               </span>
               <MainButton href='/new-pin' className={styles.addButton}>

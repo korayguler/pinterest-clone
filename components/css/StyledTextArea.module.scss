@@ -8,9 +8,8 @@
 .pinTextAreaInput {
   height: 100%;
   cursor: text;
-  font-size: 24px;
+  font-size: 18px;
   resize: none;
-  font-weight: 700;
   caret-color: #333;
   width: 100%;
   border: none;
@@ -33,8 +32,9 @@
 
 .largeSize {
   font-size: 36px;
+  font-weight: 700;
 }
-.smallsize {
+.smallSize {
   font-size: 16px;
 }
 .pinAreaInputCounter {

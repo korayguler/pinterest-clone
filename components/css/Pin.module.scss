@@ -39,7 +39,7 @@
       position: absolute;
       display: flex;
       padding: 10px;
-      justify-content: space-evenly;
+
       .urlButton {
         height: 30px;
         min-width: 130px;
@@ -74,4 +74,22 @@
       }
     }
   }
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 6px;
+}
+.title {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(var(--v-111));
+  margin-top: 4px;
+  margin-bottom: 5px;
+  margin-left: 8px;
+}
+
+.hidden {
+  display: none;
 }

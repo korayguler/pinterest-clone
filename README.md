@@ -41,6 +41,5 @@ $ npm run dev
 - [x] Pinler iç içe geçiyor :bug
 - [x] PinExtra componenti tamamlanıp data çekilecek
 - [x] prettier ayarlarını güncelle
-- [ ] new pin sayfası için componentler tasarlanacak ve sayfa bitecek
-- [ ] profile sayfası tasarlanacak
-- [ ] addPinButton componenti için animasyon
+- [x] new pin sayfası için componentler tasarlanacak ve sayfa bitecek
+- [x] profile sayfası tasarlanacak

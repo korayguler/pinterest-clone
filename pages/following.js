@@ -1,22 +1,24 @@
 import Layout from 'components/Layout';
-import PinExtra from 'components/PinExtra';
+import Pin from 'components/Pin';
 import StackGrid, { transitions, easings } from 'react-stack-grid';
 import Template from 'components/Template';
 import DummyData from 'dummy';
-import dummyData from 'dummy';
 const FollowingPage = () => {
   return (
     <Layout>
-      <Template gutterHeight={24}>
-        {dummyData.map((e, i) => (
-          <PinExtra
+      <Template>
+        {DummyData.map((e, i) => (
+          <Pin
             key={i}
-            title={e.title}
+            className='pin'
+            title='Test Pin'
+            desc='Test pin for my pinterest clone'
             image={e.image}
-            href={e.href}
-            userImage={e.userImage}
-            username={e.username}
-            imageSize={'32px'}
+            href='http://korayguler.com/'
+            userImage='image/profile.jpg'
+            userName='Koray'
+            withDetails
+            withTitle
           />
         ))}
       </Template>

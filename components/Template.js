@@ -2,7 +2,7 @@ import StackGrid, { transitions, easings } from 'react-stack-grid';
 const transition = transitions.scaleDown;
 export default function Template({
   children,
-  gutterHeight = 40,
+  gutterHeight = 30,
   gutterWidth = 15,
   columnWidth = 235,
 }) {

@@ -7,24 +7,27 @@ import CircleImage from 'components/CircleImage';
 import * as Icon from 'components/icons';
 import IconButton from 'components/IconButton';
 import { useRouter } from 'next/router';
-
+import Head from 'next/head';
 export default function Header({ children }) {
   const router = useRouter();
 
   return (
     <header className={styles.header}>
+      <Head>
+        <link rel='icon' type='image/png' sizes='32x32' href='favicon.png' />
+      </Head>
       <div className={styles.navigationContainer}>
         <IconButton href={'/'}>
           <Icon.MainLogo width={24} height={24} color={'rgb(var(--c-p))'} />
         </IconButton>
         <MainButton href={'/'} selected={router.pathname == '/' ? true : false}>
-          Ana Sayfa
+          Home
         </MainButton>
         <MainButton
           href={'/following'}
           selected={router.pathname == '/following' ? true : false}
         >
-          Takip ediliyor
+          Following
         </MainButton>
       </div>
       <SearchBar />

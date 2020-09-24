@@ -14,6 +14,7 @@ const HomePage = () => {
             desc='Test pin for my pinterest clone'
             image={e.image}
             href='http://korayguler.com/'
+            withTitle
           />
         ))}
       </Template>

@@ -15,13 +15,10 @@ const newPin = () => {
               <div className={styles.mediaEmtyViewInside}>
                 <span>
                   <UploadIcon />
-                  <p>Yüklemek için sürükleyip bırakın veya tıklayın</p>
+                  <p>Drag and drop or click to upload</p>
                 </span>
 
-                <p>
-                  Öneri: 20 MB'den küçük yüksek kaliteli .jpg dosyaları
-                  kullanın.
-                </p>
+                <p>Suggestion: Use 20 MB of small high-quality .jpg image</p>
               </div>
               <input
                 type='file'
@@ -29,19 +26,37 @@ const newPin = () => {
               />
             </div>
           </div>
-          <MainButton className={styles.saveButton}>Siteden Kaydet</MainButton>
+          <MainButton className={styles.saveButton}>Save Pin</MainButton>
         </div>
         <div className={styles.rightSide}>
+          <div>
+            <StyledTextArea
+              largeSize
+              inputCheckText={
+                'Usually the first 40 characters appear in streams'
+              }
+              inputCounter={50}
+              placeholder='Add your title'
+            />
+            <MiniProfile
+              userImage={'image/profile.jpg'}
+              bold
+              userName='koray'
+              imageSize={32}
+              className={styles.miniProfile}
+            />
+            <StyledTextArea
+              smallSize
+              inputCheckText={
+                'Usually, when users click on your Pin, they see the first 50 characters'
+              }
+              inputCounter={500}
+              placeholder='Tell everyone what your pin is about'
+            />
+          </div>
           <StyledTextArea
-            largeSize
-            inputCheckText={'Akışlarda genellikle ilk 40 karakter görünür'}
-            inputCounter={50}
-          />
-          <MiniProfile
-            userImage={'image/profile.jpg'}
-            bold
-            userName='koray'
-            imageSize={32}
+            placeholder='Add a destination link'
+            className={styles.pinLink}
           />
         </div>
       </div>
