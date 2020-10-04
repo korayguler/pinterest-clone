@@ -1,18 +1,23 @@
-import Layout from 'components/Layout';
-import styles from 'pages/css/new-pin.module.scss';
-import UploadIcon from 'components/icons/Upload';
-import MainButton from 'components/MainButton';
-import StyledTextArea from 'components/StyledTextArea';
-import MiniProfile from 'components/MiniProfile';
+//REACT
 import { useState, useEffect } from 'react';
+
+//STYLES
+import style from 'pages/css/new-pin.module.scss';
+//MAIN COMPONENTS
+import Layout from 'components/layout';
+import MainButton from 'components/main-button';
+import StyledTextArea from 'components/styled-text-area';
+import MiniProfile from 'components/mini-profile';
+
+import UploadIcon from 'components/icons/Upload';
 const newPin = () => {
   return (
     <Layout>
-      <div className={styles.newPinArea}>
-        <div className={styles.leftSide}>
-          <div className={styles.imageUploadArea}>
-            <div className={styles.mediaEmptyView}>
-              <div className={styles.mediaEmtyViewInside}>
+      <div className={style.newPinArea}>
+        <div className={style.leftSide}>
+          <div className={style.imageUploadArea}>
+            <div className={style.mediaEmptyView}>
+              <div className={style.mediaEmtyViewInside}>
                 <span>
                   <UploadIcon />
                   <p>Drag and drop or click to upload</p>
@@ -26,9 +31,9 @@ const newPin = () => {
               />
             </div>
           </div>
-          <MainButton className={styles.saveButton}>Save Pin</MainButton>
+          <MainButton className={style.saveButton}>Save Pin</MainButton>
         </div>
-        <div className={styles.rightSide}>
+        <div className={style.rightSide}>
           <div>
             <StyledTextArea
               largeSize
@@ -43,7 +48,7 @@ const newPin = () => {
               bold
               userName='koray'
               imageSize={32}
-              className={styles.miniProfile}
+              className={style.miniProfile}
             />
             <StyledTextArea
               smallSize
@@ -56,11 +61,11 @@ const newPin = () => {
           </div>
           <StyledTextArea
             placeholder='Add a destination link'
-            className={styles.pinLink}
+            className={style.pinLink}
           />
         </div>
       </div>
-      <div className={styles.container}></div>
+      <div className={style.container}></div>
     </Layout>
   );
 };

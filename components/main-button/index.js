@@ -1,5 +1,8 @@
-import Button from 'components/Button';
-import styles from 'components/css/MainButton.module.scss';
+//STYLES
+import style from './style.module.scss';
+//MAIN COMPONENTS
+import Button from 'components/button';
+//HELPERS
 import classMerge from 'classnames';
 export default function MainButton({
   children,
@@ -11,8 +14,8 @@ export default function MainButton({
   return (
     <Button
       className={classMerge(
-        styles.mainButton,
-        selected && styles.selected,
+        style.mainButton,
+        selected && style.selected,
         className,
       )}
       href={href}

@@ -1,9 +1,11 @@
-import styles from 'components/css/ModalArea.module.scss';
+//STYLES
+import style from './style.module.scss';
+//HELPERS
 import classMerge from 'classnames';
 
 function Button({ children, className, ...props }) {
   return (
-    <div className={classMerge(styles.modalArea, className)} {...props}>
+    <div className={classMerge(style.modalArea, className)} {...props}>
       {children}
     </div>
   );

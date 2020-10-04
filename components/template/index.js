@@ -1,3 +1,4 @@
+//HELPERS
 import StackGrid, { transitions, easings } from 'react-stack-grid';
 const transition = transitions.scaleDown;
 export default function Template({

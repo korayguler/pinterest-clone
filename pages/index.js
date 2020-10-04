@@ -1,7 +1,10 @@
-import Layout from 'components/Layout';
-import Pin from 'components/Pin';
+//MAIN COMPONENTS
+import Layout from 'components/layout';
+import Pin from 'components/pin';
+import Template from 'components/template';
+//DUMMY DATA
 import DummyData from 'dummy';
-import Template from 'components/Template';
+
 const HomePage = () => {
   return (
     <Layout>

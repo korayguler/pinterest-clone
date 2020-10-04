@@ -1,6 +1,10 @@
-import styles from 'components/css/Button.module.scss';
-import classMerge from 'classnames';
+//REACT
 import Link from 'next/link';
+//style
+import style from './style.module.scss';
+
+//HELPERS
+import classMerge from 'classnames';
 
 function BaseButton({ children, ...props }) {
   return (
@@ -21,7 +25,7 @@ function LinkButton({ children, href, ...props }) {
 function Button({ children, className, ...props }) {
   const Comp = props.href ? LinkButton : BaseButton;
   return (
-    <Comp className={classMerge(styles.btn, className)} {...props}>
+    <Comp className={classMerge(style.btn, className)} {...props}>
       {children}
     </Comp>
   );

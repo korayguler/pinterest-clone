@@ -1,12 +1,15 @@
+//REACT
 import React, { useState } from 'react';
-import styles from 'components/css/Pin.module.scss';
-import MainButton from 'components/MainButton';
-import ShareIcon from 'components/icons/Share';
-import TreeDotIcon from 'components/icons/TreeDot';
-import IconButton from 'components/IconButton';
-import NewTabIcon from 'components/icons/NewTab';
-import CircleImage from 'components/CircleImage';
-import MiniProfile from 'components/MiniProfile';
+//style
+import style from './style.module.scss';
+//MAIN COMPONENTS
+import MainButton from 'components/main-button';
+import CircleImage from 'components/circle-image';
+import MiniProfile from 'components/mini-profile';
+import IconButton from 'components/icon-button';
+//ICON COMPONENTS
+import * as Icon from 'components/icons';
+//HELPERS
 import classMerge from 'classnames';
 export default function Pin({
   href,
@@ -28,42 +31,42 @@ export default function Pin({
   return (
     <>
       <div
-        className={styles.pin}
+        className={style.pin}
         onMouseEnter={() => showPinContent(true)}
         onMouseLeave={() => showPinContent(false)}
       >
         <img src={image} />
         {show && (
-          <div className={styles.content}>
-            <MainButton className={styles.saveButton}>Kaydet</MainButton>
-            <div className={styles.helpers}>
+          <div className={style.content}>
+            <MainButton className={style.saveButton}>Kaydet</MainButton>
+            <div className={style.helpers}>
               {href && (
                 <MainButton
                   className={classMerge(
-                    styles.urlButton,
-                    pinWith < 235 && styles.hidden,
+                    style.urlButton,
+                    pinWith < 235 && style.hidden,
                   )}
                   href={href}
                 >
-                  <NewTabIcon className={styles.newTabIcon} />
+                  <Icon.NewTabIcon className={style.newTabIcon} />
                   {hrefRes}
                 </MainButton>
               )}
-              <div className={styles.iconButtonsArea}>
-                <IconButton className={styles.iconButtons}>
-                  <ShareIcon />
+              <div className={style.iconButtonsArea}>
+                <IconButton className={style.iconButtons}>
+                  <Icon.ShareIcon />
                 </IconButton>
-                <IconButton className={styles.iconButtons}>
-                  <TreeDotIcon />
+                <IconButton className={style.iconButtons}>
+                  <Icon.TreeDotIcon />
                 </IconButton>
               </div>
             </div>
           </div>
         )}
       </div>
-      {withTitle && <h3 className={styles.title}>{title}</h3>}
+      {withTitle && <h3 className={style.title}>{title}</h3>}
       {withDetails && (
-        <div className={styles.details}>
+        <div className={style.details}>
           <MiniProfile
             userImage={userImage}
             imageSize={32}

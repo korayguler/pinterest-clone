@@ -1,22 +1,27 @@
-import styles from 'components/css/Header.module.scss';
-import SearchBar from 'components/SearchBar';
-import ClassNames from 'classnames';
-import Button from 'components/Button';
-import MainButton from 'components/MainButton';
-import CircleImage from 'components/CircleImage';
-import * as Icon from 'components/icons';
-import IconButton from 'components/IconButton';
+//REACT
 import { useRouter } from 'next/router';
 import Head from 'next/head';
+//STYLES
+import style from './style.module.scss';
+//MAIN COMPONENTS
+import SearchBar from 'components/search-bar';
+import Button from 'components/button';
+import MainButton from 'components/main-button';
+import CircleImage from 'components/circle-image';
+import IconButton from 'components/icon-button';
+//HELPERS
+import ClassNames from 'classnames';
+//ICONS
+import * as Icon from 'components/icons';
 export default function Header({ children }) {
   const router = useRouter();
 
   return (
-    <header className={styles.header}>
+    <header className={style.header}>
       <Head>
         <link rel='icon' type='image/png' sizes='32x32' href='favicon.png' />
       </Head>
-      <div className={styles.navigationContainer}>
+      <div className={style.navigationContainer}>
         <IconButton href={'/'}>
           <Icon.MainLogo width={24} height={24} color={'rgb(var(--c-p))'} />
         </IconButton>
@@ -31,7 +36,7 @@ export default function Header({ children }) {
         </MainButton>
       </div>
       <SearchBar />
-      <div className={styles.profileButtonsContainer}>
+      <div className={style.profileButtonsContainer}>
         <IconButton>
           <Icon.Notification width={24} height={24} />
         </IconButton>
@@ -43,7 +48,7 @@ export default function Header({ children }) {
           <CircleImage src='/image/profile.jpg' size={'24px'} />
         </IconButton>
 
-        <IconButton className={styles.miniButton}>
+        <IconButton className={style.miniButton}>
           <Icon.Down width={12} height={12} />
         </IconButton>
       </div>

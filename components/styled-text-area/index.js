@@ -1,18 +1,21 @@
+//REACT
 import { useState, useEffect } from 'react';
+//STYLES
+import style from './style.module.scss';
+//HELPERS
 import TextareaAutosize from 'react-textarea-autosize';
 import classMerge from 'classnames';
-import styles from 'components/css/StyledTextArea.module.scss';
 export default function StyedTextArea(props) {
   const [pinTextAreaInputVal, pinTextAreaInputValSet] = useState(0);
   useEffect(() => {});
   return (
     <>
-      <div className={classMerge(styles.pinTextArea, props.className)}>
+      <div className={classMerge(style.pinTextArea, props.className)}>
         <TextareaAutosize
           className={classMerge(
-            styles.pinTextAreaInput,
-            props.largeSize && styles.largeSize,
-            props.smallSize && styles.smallSize,
+            style.pinTextAreaInput,
+            props.largeSize && style.largeSize,
+            props.smallSize && style.smallSize,
           )}
           placeholder={props.placeholder}
           onChange={(e) => pinTextAreaInputValSet(e.target.value.length)}
@@ -20,12 +23,12 @@ export default function StyedTextArea(props) {
         />
       </div>
 
-      <div className={styles.pinAreaInputCheck}>
+      <div className={style.pinAreaInputCheck}>
         {props.inputCheckText && props.inputCheckText.length > 0 && (
-          <p className={styles.inputCheckText}>{props.inputCheckText}</p>
+          <p className={style.inputCheckText}>{props.inputCheckText}</p>
         )}
         {props.inputCounter > 0 && (
-          <span className={styles.pinAreaInputCounter}>
+          <span className={style.pinAreaInputCounter}>
             {props.inputCounter - pinTextAreaInputVal}
           </span>
         )}

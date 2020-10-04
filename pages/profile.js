@@ -1,17 +1,21 @@
-import Layout from 'components/Layout';
-import CircleImage from 'components/CircleImage';
-import styles from 'pages/css/profile.module.scss';
-import Template from 'components/Template';
+//style
+import style from 'pages/css/profile.module.scss';
+//MAIN COMPONENTS
+import Layout from 'components/layout';
+import CircleImage from 'components/circle-image';
+import Template from 'components/template';
+import Pin from 'components/pin';
+//DUMMY DATA
 import DummyData from 'dummy';
-import Pin from 'components/Pin';
+
 const ProfilePage = () => {
   return (
     <Layout>
-      <div className={styles.profileArea}>
+      <div className={style.profileArea}>
         <CircleImage src={'image/profile.jpg'} size={'120px'} />
-        <h1 className={styles.fullName}>Koray Güler</h1>
-        <h5 className={styles.userName}>@koative</h5>
-        <div className={styles.followArea}>
+        <h1 className={style.fullName}>Koray Güler</h1>
+        <h5 className={style.userName}>@koative</h5>
+        <div className={style.followArea}>
           <span>0 followers</span> · <span>3 followings</span>
         </div>
       </div>

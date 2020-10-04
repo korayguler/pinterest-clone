@@ -1,5 +1,8 @@
-import Button from 'components/Button';
-import styles from 'components/css/IconButton.module.scss';
+//STYLES
+import style from './style.module.scss';
+//COMPONENTS
+import Button from 'components/button';
+//HELPERS
 import classMerge from 'classnames';
 export default function IconButton({
   children,
@@ -11,9 +14,9 @@ export default function IconButton({
   return (
     <Button
       className={classMerge(
-        styles.iconButton,
-        focused && styles.focused,
-        hoverable && styles.hoverable,
+        style.iconButton,
+        focused && style.focused,
+        hoverable && style.hoverable,
         className,
       )}
       {...props}
