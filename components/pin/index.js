@@ -47,6 +47,7 @@ export default function Pin({
                     pinWith < 235 && style.hidden,
                   )}
                   href={href}
+                  target='_blank'
                 >
                   <Icon.NewTabIcon className={style.newTabIcon} />
                   {hrefRes}

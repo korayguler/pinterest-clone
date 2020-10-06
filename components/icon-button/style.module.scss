@@ -7,6 +7,7 @@
   align-items: center;
   justify-content: center;
   background-color: rgb(var(--c-primary));
+  position: relative;
 }
 
 .focused:focus {

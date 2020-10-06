@@ -77,9 +77,7 @@ export default function Header({ children }) {
 
             {notification && (
               <div className={style.hideCloseArea} onClick={closeArea}>
-                <ModalArea className={style.notification}>
-                  NOTİFİCATİON
-                </ModalArea>
+                <ModalArea className={style.notification}>notifical</ModalArea>
               </div>
             )}
           </IconButton>
