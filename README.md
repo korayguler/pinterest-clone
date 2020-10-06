@@ -18,6 +18,15 @@ $ npm run dev
 
 ```
 
+### How to start api server
+
+```bash
+
+# Start the api server
+$ npm run api
+
+```
+
 ### Tech Stack
 
 - react
@@ -36,10 +45,3 @@ $ npm run dev
 - node
 - npm
 
-### TODO
-
-- [x] Pinler iç içe geçiyor :bug
-- [x] PinExtra componenti tamamlanıp data çekilecek
-- [x] prettier ayarlarını güncelle
-- [x] new pin sayfası için componentler tasarlanacak ve sayfa bitecek
-- [x] profile sayfası tasarlanacak
