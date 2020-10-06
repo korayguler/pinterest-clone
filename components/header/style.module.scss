@@ -27,3 +27,46 @@
     }
   }
 }
+
+.notificationBtn {
+  z-index: 30;
+}
+.messagesBtn {
+  z-index: 30;
+}
+.accountsOptionBtn {
+  z-index: 30;
+}
+.hideCloseArea {
+  background-color: red;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  z-index: 15;
+}
+.notification {
+  width: 25%;
+  height: auto;
+  margin-top: 60px;
+  padding: 21px;
+  right: 0;
+  position: absolute;
+}
+.messages {
+  width: 25%;
+  height: auto;
+  margin-top: 60px;
+  padding: 21px;
+  right: 0;
+  position: absolute;
+}
+.accountsOption {
+  width: 25%;
+  height: auto;
+  margin-top: 60px;
+  padding: 21px;
+  right: 0;
+  position: absolute;
+}

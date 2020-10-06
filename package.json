@@ -13,12 +13,14 @@
     "sass": "^1.26.10"
   },
   "devDependencies": {
-    "@svgr/cli": "^5.4.0"
+    "@svgr/cli": "^5.4.0",
+    "json-server": "^0.16.2"
   },
   "scripts": {
     "dev": "next",
     "svgr": "svgr icons/* --icon --out-dir components/icons ",
-    "build": "next build"
+    "build": "next build",
+    "api": "json-server --watch ./api/data.json --port 3001"
   },
   "author": "",
   "license": "ISC"

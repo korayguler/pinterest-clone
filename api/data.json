@@ -1,0 +1,23 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "userName": "korayguler",
+      "fullName": "Koray Güler",
+      "profilePhoto": "http://i.pinimg.com/75x75_RS/7b/cb/62/7bcb6220cef3d261ee230836f65867d2.jpg",
+      "followers": "30",
+      "followings": "5"
+    }
+  ],
+
+  "pins": [
+    {
+      "id": "1",
+      "userId": "1",
+      "title": "how area you",
+      "details": "lorem",
+      "image": "https://i.pinimg.com/564x/6d/9c/92/6d9c9275a0922615f16819f91ee2e251.jpg",
+      "url": "https://korayguler.com"
+    }
+  ]
+}
